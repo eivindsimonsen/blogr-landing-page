@@ -68,6 +68,17 @@ nav {
   background: linear-gradient(180deg, rgba(255, 143, 112, 1) 0%, rgba(255, 61, 84, 1) 100%);
   border-radius: 0px 0px 0px 100px;
   height: 75vh;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.nav-background {
+  width: 1439px;
+  position: absolute;
+  bottom: -530px;
+  left: -370px;
+  z-index: 2;
 }
 
 #navigation {
@@ -76,6 +87,7 @@ nav {
   align-items: center;
   padding: 60px 0px 60px 0px;
   position: relative;
+  z-index: 3;
 
   & .fa-bars {
     color: $TextColor;
@@ -84,6 +96,8 @@ nav {
 
   &-content {
     text-align: center;
+    position: relative;
+    z-index: 3;
 
     & h1 {
       font-size: 2.2rem;

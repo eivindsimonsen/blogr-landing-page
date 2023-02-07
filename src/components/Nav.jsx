@@ -8,17 +8,23 @@ function Nav() {
   const [dropdownActiveCom, setDropdownActiveCom] = useState(false);
   const [dropdownActiveCon, setDropdownActiveCon] = useState(false);
 
+  // On hamburger click, show hidden nav
   const showNav = () => {
     setIsActive(!isActive);
   };
 
+  // Show hidden dropdown
   const showDropdownProduct = () => {
     setDropdownActivePro(!dropdownActivePro);
   };
 
+  // Show hidden dropdown
+
   const showDropdownCompany = () => {
     setDropdownActiveCom(!dropdownActiveCom);
   };
+
+  // Show hidden dropdown
 
   const showDropdownConnect = () => {
     setDropdownActiveCon(!dropdownActiveCon);
@@ -80,6 +86,8 @@ function Nav() {
           <button className="cta cta--alt">Learn More</button>
         </section>
       </div>
+
+      <img className="nav-background" src={background} alt="#" />
     </nav>
   );
 }
