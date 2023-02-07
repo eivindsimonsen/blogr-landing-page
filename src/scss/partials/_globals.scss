@@ -1,3 +1,177 @@
+// Globals
 body {
-  background-color: red;
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $OverpassFont;
+}
+
+button,
+body {
+  font-family: $UbuntuFont;
+}
+
+.wrapper {
+  margin: 0px 25px;
+}
+
+.cta {
+  font-weight: $fontWeight700;
+  width: 135px;
+  height: 50px;
+  font-size: 1rem;
+  border-radius: 25px;
+  border: 0px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &--org {
+    color: $CTAtext;
+
+    &:hover {
+      color: $TextColor;
+      background-color: $CTAhover;
+      transition: 0.3s;
+    }
+  }
+
+  &--alt {
+    color: $TextColor;
+    background-color: transparent;
+    border: 1px solid $TextColor;
+
+    &:hover {
+      color: $CTAtext;
+      background-color: $TextColor;
+      transition: 0.3s;
+    }
+  }
+
+  &--nav {
+    background: rgb(255, 143, 112);
+    background: linear-gradient(180deg, rgba(255, 143, 112, 1) 0%, rgba(255, 61, 84, 1) 100%);
+    color: $TextColor;
+
+    &:hover {
+      background: linear-gradient(210deg, rgba(255, 143, 112, 1) 0%, rgba(255, 61, 84, 1) 100%);
+    }
+  }
+}
+
+// Nav
+nav {
+  background: rgb(255, 143, 112);
+  background: linear-gradient(180deg, rgba(255, 143, 112, 1) 0%, rgba(255, 61, 84, 1) 100%);
+  border-radius: 0px 0px 0px 100px;
+  height: 75vh;
+}
+
+#navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0px 60px 0px;
+  position: relative;
+
+  & .fa-bars {
+    color: $TextColor;
+    font-size: 1.9rem;
+  }
+
+  &-content {
+    text-align: center;
+
+    & h1 {
+      font-size: 2.2rem;
+      color: $TextColor;
+      margin-bottom: 17px;
+    }
+
+    & h2 {
+      margin: 0px 20px 40px 20px;
+      font-size: 1.3rem;
+      color: $TextColor;
+      font-weight: $fontWeight300;
+    }
+
+    & button {
+      margin: 10px;
+    }
+  }
+}
+
+nav ul {
+  display: none;
+}
+
+.nav-links {
+  border-radius: 5px;
+  list-style-type: none;
+  position: absolute;
+  background-color: $TextColor;
+  padding: 20px 20px 40px 20px;
+  top: 125px;
+  left: 0px;
+  right: 0;
+  text-align: center;
+  box-shadow: -5px 38px 61px -9px rgba(0, 0, 0, 0.3);
+
+  & li {
+    font-size: 1.3rem;
+    font-weight: $fontWeight500;
+    color: $BodyCopy;
+    margin: 25px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    & svg {
+      margin-left: 6px;
+    }
+
+    & > div {
+      display: none;
+    }
+  }
+
+  &.active {
+    display: block;
+  }
+}
+
+.turn-arrow {
+  transform: rotate(180deg);
+}
+
+.dropdown-links {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  flex-basis: 100%;
+
+  & a {
+    color: $BodyCopy;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+
+  &.active {
+    display: flex;
+  }
+
+  & > * {
+    margin: 15px;
+  }
+}
+
+hr {
+  margin: 25px 0px 40px 0px;
 }
