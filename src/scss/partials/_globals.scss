@@ -87,7 +87,7 @@ nav {
   align-items: center;
   padding: 60px 0px 60px 0px;
   position: relative;
-  z-index: 3;
+  z-index: 4;
 
   & .fa-bars {
     color: $TextColor;
@@ -125,12 +125,12 @@ nav ul {
 .nav-links {
   border-radius: 5px;
   list-style-type: none;
-  position: absolute;
+  position: fixed;
   background-color: $TextColor;
   padding: 20px 20px 40px 20px;
   top: 125px;
-  left: 0px;
-  right: 0;
+  left: 25px;
+  right: 25px;
   text-align: center;
   box-shadow: -5px 38px 61px -9px rgba(0, 0, 0, 0.3);
 

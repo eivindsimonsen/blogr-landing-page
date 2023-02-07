@@ -16,18 +16,24 @@ function Nav() {
   // Show hidden dropdown
   const showDropdownProduct = () => {
     setDropdownActivePro(!dropdownActivePro);
+    setDropdownActiveCom(false);
+    setDropdownActiveCon(false);
   };
 
   // Show hidden dropdown
 
   const showDropdownCompany = () => {
     setDropdownActiveCom(!dropdownActiveCom);
+    setDropdownActivePro(false);
+    setDropdownActiveCon(false);
   };
 
   // Show hidden dropdown
 
   const showDropdownConnect = () => {
     setDropdownActiveCon(!dropdownActiveCon);
+    setDropdownActivePro(false);
+    setDropdownActiveCom(false);
   };
 
   return (
