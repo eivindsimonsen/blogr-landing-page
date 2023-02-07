@@ -89,7 +89,8 @@ nav {
   position: relative;
   z-index: 4;
 
-  & .fa-bars {
+  & .fa-bars,
+  .fa-xmark {
     color: $TextColor;
     font-size: 1.9rem;
   }

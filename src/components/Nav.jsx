@@ -7,10 +7,12 @@ function Nav() {
   const [dropdownActivePro, setDropdownActivePro] = useState(false);
   const [dropdownActiveCom, setDropdownActiveCom] = useState(false);
   const [dropdownActiveCon, setDropdownActiveCon] = useState(false);
+  const [hamburger, setHamburger] = useState(false);
 
   // On hamburger click, show hidden nav
   const showNav = () => {
     setIsActive(!isActive);
+    setHamburger(!hamburger);
   };
 
   // Show hidden dropdown
@@ -21,7 +23,6 @@ function Nav() {
   };
 
   // Show hidden dropdown
-
   const showDropdownCompany = () => {
     setDropdownActiveCom(!dropdownActiveCom);
     setDropdownActivePro(false);
@@ -29,7 +30,6 @@ function Nav() {
   };
 
   // Show hidden dropdown
-
   const showDropdownConnect = () => {
     setDropdownActiveCon(!dropdownActiveCon);
     setDropdownActivePro(false);
@@ -83,7 +83,8 @@ function Nav() {
             <button className="cta cta--nav">Sign up</button>
           </ul>
 
-          <i className="fa-solid fa-bars" onClick={showNav}></i>
+          <i className={hamburger ? "fa-solid fa-xmark" : "fa-solid fa-bars"} onClick={showNav}></i>
+          {/* <i className="fa-solid fa-xmark" onClick={showNav}></i> */}
         </section>
         <section id="navigation-content">
           <h1>A modern publishing platform</h1>
