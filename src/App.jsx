@@ -1,12 +1,17 @@
-import { useState } from "react";
 import "./scss/style.scss";
+import Nav from "./components/Nav";
+import Content from "./components/Content";
+import Banner from "./components/Banner";
+import Footer from "./components/Footer";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="App">
-      <h1>hello</h1>
+      <Nav />
+      <Content title="Designed for the future" />
+      <Banner />
+      <Content />
+      <Footer />
     </div>
   );
 }
