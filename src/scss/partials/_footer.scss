@@ -1,0 +1,30 @@
+footer {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(11, 10, 22, 1) 0%);
+  border-radius: 0px 100px 0px 0px;
+  color: $FooterColor;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+
+  h3 {
+    font-size: 2rem;
+    font-family: $UbuntuFont;
+  }
+
+  h3,
+  h4 {
+    color: $TextColor;
+  }
+}
+
+.footer-links {
+  ul {
+    padding: 0px;
+    li {
+      margin: 13px 0px;
+    }
+  }
+}

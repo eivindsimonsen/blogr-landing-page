@@ -84,7 +84,6 @@ function Nav() {
           </ul>
 
           <i className={hamburger ? "fa-solid fa-xmark" : "fa-solid fa-bars"} onClick={showNav}></i>
-          {/* <i className="fa-solid fa-xmark" onClick={showNav}></i> */}
         </section>
         <section id="navigation-content">
           <h1>A modern publishing platform</h1>
