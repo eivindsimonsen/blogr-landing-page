@@ -17,7 +17,7 @@ nav {
   z-index: 2;
 }
 
-#navigation {
+#navigation-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,6 +29,10 @@ nav {
   .fa-xmark {
     color: $TextColor;
     font-size: 1.9rem;
+
+    @media (min-width: 1129px) {
+      display: none;
+    }
   }
 
   &-content {
@@ -51,6 +55,12 @@ nav {
     & button {
       margin: 10px;
     }
+  }
+
+  @media (min-width: 1129px) {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    gap: 80px;
   }
 }
 
@@ -77,6 +87,7 @@ nav ul {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    cursor: pointer;
 
     & svg {
       margin-left: 6px;
@@ -90,10 +101,78 @@ nav ul {
   &.active {
     display: block;
   }
+
+  &-desktop {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 1129px) {
+      flex-direction: row;
+
+      * {
+        margin: 0px 35px;
+      }
+    }
+  }
+
+  @media (min-width: 1129px) {
+    display: flex;
+    position: revert;
+    background-color: transparent;
+    padding: 0px;
+    box-shadow: none;
+
+    & li {
+      color: $TextColor;
+    }
+
+    & .login-mobile {
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+  }
+}
+
+.login-desktop {
+  color: $TextColor;
+  list-style-type: none;
+  display: none;
+
+  * {
+    margin: 0px 15px;
+  }
+
+  @media (min-width: 1129px) {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    grid-column: none;
+  }
 }
 
 .turn-arrow {
   transform: rotate(180deg);
+}
+
+.hide-arrow {
+  &-mobile {
+    display: block;
+    @media (min-width: 1129px) {
+      display: none;
+    }
+  }
+
+  &-desktop {
+    display: none;
+    @media (min-width: 1129px) {
+      display: block;
+    }
+  }
+}
+
+.list-container {
+  position: relative;
 }
 
 .dropdown-links {
@@ -104,6 +183,7 @@ nav ul {
   justify-content: space-evenly;
   margin-top: 20px;
   flex-basis: 100%;
+  width: 133.91px;
 
   & a {
     color: $BodyCopy;
@@ -118,8 +198,18 @@ nav ul {
   & > * {
     margin: 15px;
   }
+
+  @media (min-width: 768px) {
+    position: absolute;
+    top: 20px;
+    right: -20px;
+  }
 }
 
 hr {
   margin: 25px 0px 40px 0px;
+
+  @media (min-width: 1129px) {
+    display: none;
+  }
 }

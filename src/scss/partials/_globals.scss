@@ -17,6 +17,10 @@ button {
 
 .wrapper {
   margin: 0px 30px;
+
+  @media (min-width: 1803px) {
+    margin: 0px 370px;
+  }
 }
 
 .cta {
