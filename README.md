@@ -19,8 +19,9 @@ This is a solution to the [Blogr landing page challenge on Frontend Mentor](http
 
 Users should be able to:
 
-- View the optimal layout for the site depending on their device's screen size
+- View the optimal layout for the site depending on their device's screen size (This case mobile width: 375px, desktop: 1440px)
 - See hover states for all interactive elements on the page
+- Code the design as close as possible to design files provided
 
 ### Screenshot
 
@@ -52,5 +53,4 @@ I've learnt that for responsive design, using position absolute on several items
 ## Author
 
 - Website - [easimonsen.com](https://www.easimonsen.com/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
 - LinkedIn - [@eivindsimonsen](https://www.linkedin.com/in/eivind-simonsen-9469121b9/)
