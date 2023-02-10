@@ -1,9 +1,14 @@
+html {
+  height: -webkit-fill-available;
+}
+
 // Globals
 body {
   box-sizing: border-box;
   margin: 0px;
   text-align: center;
   font-family: $OverpassFont;
+  height: -webkit-fill-available;
 }
 
 h3 {
