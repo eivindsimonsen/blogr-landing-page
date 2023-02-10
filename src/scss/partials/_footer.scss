@@ -9,6 +9,13 @@ footer {
   justify-content: center;
   margin-top: 100px;
 
+  @media (min-width: 768px) {
+    height: auto;
+    padding: 70px 70px 100px 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
   h3 {
     font-size: 2rem;
     font-family: $UbuntuFont;
@@ -17,6 +24,7 @@ footer {
   h3,
   h4 {
     color: $TextColor;
+    font-size: 1.2rem;
   }
 }
 
@@ -24,7 +32,13 @@ footer {
   ul {
     padding: 0px;
     li {
+      list-style-type: none;
       margin: 13px 0px;
+
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
     }
   }
 }

@@ -64,8 +64,10 @@
   }
 }
 
-.content-text-desktop-pm {
-  width: 420px;
+@media (min-width: 768px) {
+  .content-text-desktop-pm {
+    width: 420px;
+  }
 }
 
 @media (min-width: 768px) {

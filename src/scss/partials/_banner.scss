@@ -16,12 +16,22 @@
 
     & p {
       margin: 0px 20px;
+
+      @media (min-width: 768px) {
+        margin: 0px;
+      }
     }
   }
 
   &-content {
     z-index: 6;
     margin-top: 55px;
+    grid-column: 2;
+
+    @media (min-width: 768px) {
+      margin: 0px 450px 0px -70px;
+      text-align: left;
+    }
   }
 
   & h3 {
@@ -38,13 +48,33 @@
     width: 590px;
     left: -110px;
     top: -250px;
+
+    @media (min-width: 768px) {
+      width: 930px;
+      left: -170px;
+      top: -400px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 45vh;
+    align-items: center;
   }
 }
 
-.banner-bg-phones {
+.banner-bg-phones-mobile {
   width: 350px;
   position: absolute;
   left: 10px;
   top: 1860px;
   z-index: 4;
+
+  @media (min-width: 768px) {
+    width: 590px;
+    left: 220px;
+    top: 1910px;
+  }
 }

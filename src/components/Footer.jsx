@@ -1,9 +1,12 @@
 import React from "react";
+import brand from "../assets/images/logo.svg";
 
 function Footer() {
   return (
     <footer>
-      <h3>Blogr</h3>
+      <a href="#">
+        <img src={brand} alt="Brand logo" />
+      </a>
       <div className="footer-links footer-product">
         <h4>Product</h4>
         <ul>

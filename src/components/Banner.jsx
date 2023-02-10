@@ -4,7 +4,7 @@ import background from "../assets/images/bg-pattern-circles.svg";
 function Banner() {
   return (
     <>
-      <img className="banner-bg-phones" src={image} alt="#" />
+      <img className="banner-bg-phones-mobile" src={image} alt="#" />
       <section className="banner">
         <div className="banner-wrapper banner-content">
           <h3>State of the Art Infrastructure</h3>
