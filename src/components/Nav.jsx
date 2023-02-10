@@ -1,5 +1,6 @@
 import brand from "../assets/images/logo.svg";
 import background from "../assets/images/bg-pattern-intro-mobile.svg";
+import backgroundDesktop from "../assets/images/bg-pattern-intro-desktop.svg";
 import { useState } from "react";
 
 function Nav() {
@@ -112,7 +113,8 @@ function Nav() {
         </section>
       </div>
 
-      <img className="nav-background" src={background} alt="#" />
+      <img className="nav-background-mobile" src={background} alt="#" />
+      <img className="nav-background-desktop" src={backgroundDesktop} alt="#" />
     </nav>
   );
 }

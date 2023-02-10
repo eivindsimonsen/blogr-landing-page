@@ -9,6 +9,7 @@ body {
 h3 {
   color: $HeadingColor;
   font-size: 1.6rem;
+  font-size: clamp(1.6rem, 2.5vw, 2rem);
 }
 
 button {
@@ -60,8 +61,16 @@ button {
     background: linear-gradient(180deg, rgba(255, 143, 112, 1) 0%, rgba(255, 61, 84, 1) 100%);
     color: $TextColor;
 
-    &:hover {
-      background: linear-gradient(210deg, rgba(255, 143, 112, 1) 0%, rgba(255, 61, 84, 1) 100%);
+    @media (min-width: 768px) {
+      background: none;
+      background-color: $TextColor;
+      color: $CTAtext;
+
+      &:hover {
+        color: $TextColor;
+        background-color: $CTAhover;
+        transition: 0.3s;
+      }
     }
   }
 }
