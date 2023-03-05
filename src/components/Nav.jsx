@@ -42,17 +42,44 @@ function Nav() {
       <div className="wrapper">
         <section id="navigation-container">
           <a href="#">
-            <img src={brand} alt="Brand logo" />
+            <img
+              src={brand}
+              alt="Brand logo"
+            />
           </a>
           <ul className={isActive ? "active nav-links" : "nav-links"}>
             <div className="nav-links-desktop">
-              <li className="list-container" onClick={showDropdownProduct}>
+              <li
+                className="list-container"
+                onClick={showDropdownProduct}
+              >
                 Product
-                <svg className={"hide-arrow-mobile " + (dropdownActivePro ? "turn-arrow" : "")} xmlns="http://www.w3.org/2000/svg" width="10" height="7">
-                  <path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4" />
+                <svg
+                  className={"hide-arrow-mobile " + (dropdownActivePro ? "turn-arrow" : "")}
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="7"
+                >
+                  <path
+                    fill="none"
+                    stroke="#FF7B86"
+                    stroke-width="2"
+                    d="M1 1l4 4 4-4"
+                  />
                 </svg>
-                <svg className={"hide-arrow-desktop " + (dropdownActivePro ? "turn-arrow" : "")} xmlns="http://www.w3.org/2000/svg" width="10" height="7">
-                  <path fill="none" stroke="#FFF" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4" />
+                <svg
+                  className={"hide-arrow-desktop " + (dropdownActivePro ? "turn-arrow" : "")}
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="7"
+                >
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    stroke-width="2"
+                    opacity=".75"
+                    d="M1 1l4 4 4-4"
+                  />
                 </svg>
                 <div className={dropdownActivePro ? "dropdown-links active" : "dropdown-links"}>
                   <a href="#">Overview</a>
@@ -62,28 +89,79 @@ function Nav() {
                   <a href="#">Integrations</a>
                 </div>
               </li>
-              <li className="list-container" onClick={showDropdownCompany}>
+              <li
+                className="list-container"
+                onClick={showDropdownCompany}
+              >
                 Company
-                <svg className={"hide-arrow-mobile " + (dropdownActiveCom ? "turn-arrow" : "")} xmlns="http://www.w3.org/2000/svg" width="10" height="7">
-                  <path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4" />
+                <svg
+                  className={"hide-arrow-mobile " + (dropdownActiveCom ? "turn-arrow" : "")}
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="7"
+                >
+                  <path
+                    fill="none"
+                    stroke="#FF7B86"
+                    stroke-width="2"
+                    d="M1 1l4 4 4-4"
+                  />
                 </svg>
-                <svg className={"hide-arrow-desktop " + (dropdownActiveCom ? "turn-arrow" : "")} xmlns="http://www.w3.org/2000/svg" width="10" height="7">
-                  <path fill="none" stroke="#FFF" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4" />
+                <svg
+                  className={"hide-arrow-desktop " + (dropdownActiveCom ? "turn-arrow" : "")}
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="7"
+                >
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    stroke-width="2"
+                    opacity=".75"
+                    d="M1 1l4 4 4-4"
+                  />
                 </svg>
-                <div className={dropdownActiveCom ? "dropdown-links active" : "dropdown-links"}>
+                <div
+                  onClick={() => console.log("banan")}
+                  className={dropdownActiveCom ? "dropdown-links active" : "dropdown-links"}
+                >
                   <a href="#">About</a>
                   <a href="#">Team</a>
                   <a href="#">Blog</a>
                   <a href="#">Careers</a>
                 </div>
               </li>
-              <li className="list-container" onClick={showDropdownConnect}>
+              <li
+                className="list-container"
+                onClick={showDropdownConnect}
+              >
                 Connect
-                <svg className={"hide-arrow-mobile " + (dropdownActiveCon ? "turn-arrow" : "")} xmlns="http://www.w3.org/2000/svg" width="10" height="7">
-                  <path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4" />
+                <svg
+                  className={"hide-arrow-mobile " + (dropdownActiveCon ? "turn-arrow" : "")}
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="7"
+                >
+                  <path
+                    fill="none"
+                    stroke="#FF7B86"
+                    stroke-width="2"
+                    d="M1 1l4 4 4-4"
+                  />
                 </svg>
-                <svg className={"hide-arrow-desktop " + (dropdownActiveCon ? "turn-arrow" : "")} xmlns="http://www.w3.org/2000/svg" width="10" height="7">
-                  <path fill="none" stroke="#FFF" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4" />
+                <svg
+                  className={"hide-arrow-desktop " + (dropdownActiveCon ? "turn-arrow" : "")}
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="7"
+                >
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    stroke-width="2"
+                    opacity=".75"
+                    d="M1 1l4 4 4-4"
+                  />
                 </svg>
                 <div className={dropdownActiveCon ? "dropdown-links active" : "dropdown-links"}>
                   <a href="#">Contact</a>
@@ -103,7 +181,10 @@ function Nav() {
             <button className="cta cta--nav">Sign up</button>
           </div>
 
-          <i className={hamburger ? "fa-solid fa-xmark" : "fa-solid fa-bars"} onClick={showNav}></i>
+          <i
+            className={hamburger ? "fa-solid fa-xmark" : "fa-solid fa-bars"}
+            onClick={showNav}
+          ></i>
         </section>
         <section id="navigation-container-content">
           <h1>A modern publishing platform</h1>
@@ -113,8 +194,16 @@ function Nav() {
         </section>
       </div>
 
-      <img className="nav-background-mobile" src={background} alt="#" />
-      <img className="nav-background-desktop" src={backgroundDesktop} alt="#" />
+      <img
+        className="nav-background-mobile"
+        src={background}
+        alt="#"
+      />
+      <img
+        className="nav-background-desktop"
+        src={backgroundDesktop}
+        alt="#"
+      />
     </nav>
   );
 }
